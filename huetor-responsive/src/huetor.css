@@ -1,0 +1,93 @@
+:root{
+  --bg-body: #fafafa;
+  --bg-header: #466173;
+  --bg-footer: #273b47;
+  --border-feature: #1f313c;
+  --fontSize: 18px;
+}
+
+/* -- Custom Media queries */
+
+@custom-media --mobile (max-width: 500px);
+@custom-media --tablet (max-width: 650px);
+@custom-media --desktop (max-width: 800px);
+@custom-media --retina (-webkit-min-device-pixel-ratio: 2);
+
+.u-scrollContainer{
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type:mandatory;
+  font-size: 0;
+
+  &-itemContainer{
+    border: 1px solid var(--border-feature);
+    border-radius: 12px;
+    width: 98%;
+    margin: 1%;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 18px;
+
+  }
+  &-itemContent{
+    display: flex;
+
+    & > img {
+      width: auto;
+      height: 200px;
+    }
+  }
+}
+
+.u-Grid{
+  background: gray;
+  lost-center: 800px;
+  lost-utility: clearfix;
+
+  &-column{
+    background: blue;
+    lost-column: 1/5;
+  }
+}
+
+.u-wrapper{
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.HuetorHero{
+  background: url('../img/portada1.jpg') var(--bg-header);
+  padding: 20px;
+  height: 500px;
+  animation-timing-function:
+
+  @media (--retina) {
+    background-image: url('../img/portada.jpg');
+  }
+
+  &-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-copy {
+    &-title{
+      /*font-size: calc(var(--fontSize) * 3);*/
+      font-size:  responsive 32px 70px;
+      color: var(--bg-body);
+
+      @media (--tablet) {
+        color: red;
+      }
+    }
+  }
+}
+
+.HuetorFooter{
+  background-color: var(--bg-footer);
+}

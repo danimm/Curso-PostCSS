@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alojamientos Huetor</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/huetor.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!--    <link rel="stylesheet" media="(max-width: 800px)" href="css/media-query.css">-->
+    <!-- Servicio externo es un CDN -->
+
+</head>
+<body>
+
+    <section class="HuetorHero">    <!-- HERO es el destacado de la cabecera -->
+     <header class="HuetorHero-header u-wrapper"> <!-- u de reutilizable -->
+        <figure class="HuetorHero-logo">    <!-- Logotipo -->
+            <img src="img/logo-5.svg" alt="Huetor logo" width="250" height="100">
+        </figure>
+        <span id="burger-button" class="HuetorHero-btn icon-menu"></span>
+        <nav id="navbar" class="HuetorHero-navbar">    <!-- Menú de navegacion -->
+            <ul class="HuetorHero-menu">
+                <li class="HuetorHero-menu-item"><a href="index.html">Home</a></li>
+                <li class="HuetorHero-menu-item"><a href="#habitaciones">Habitaciones</a></li>
+                <li class="HuetorHero-menu-item"><a href="precios.html">Precios</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--titulo-->
+      <div class="HuetorHero-copy u-wrapper">
+           <h1 class="HuetorHero-copy-title">Alojamientos rurales en Málaga</h1>
+           <h3 class="HuetorHero-copy-subtitle">El lugar perfecto para relajarse y disfrutar.</h3>
+
+    <!-- boton-->
+           <a href="#habitaciones" class="HuetorHero-copy-btn">Conoce más</a>
+       </div>
+    </section>
+    <section class="HuetorHabitaciones u-wrapper" id="habitaciones">    <!-- Habitaciones -->
+        <h2 class="HuetorHabitaciones-title">Nuestras habitaciones</h2>
+        <div class="video-demo-contenedor">
+
+          <div class="u-scrollContainer u-wrapper">
+            <article class="u-scrollContainer-itemContainer">
+              <div class="u-scrollContainer-itemContent">
+                <img data-src="img/simple.jpg" alt="Habitacion Simple" width="340" class="HuetorHabitaciones-item-img">
+                <div class="HuetorHabitaciones-item-container">
+                  <h3 class="HuetorHabitaciones-item-title">Habitación Simple</h3>
+
+                  <ol class="HuetorHabitaciones-item-list">
+                    <li>Super cómoda</li>
+                    <li>Perfecta para un finde</li>
+                    <li>Ideal para parejitas</li>
+                  </ol>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="u-scrollContainer-itemContainer">
+              <div class="u-scrollContainer-itemContent">
+              <img class="HuetorHabitaciones-item-img" data-src="img/doble.jpg" alt="Habitacion Doble" width="340">
+              <div class="HuetorHabitaciones-container">
+                <h3 class="HuetorHabitaciones-item-title">Habitación Doble</h3>
+
+                <ol class="HuetorHabitaciones-item-list">
+                  <li>Para las familias</li>
+                  <li>Duerme mas anchito</li>
+                  <li>Materiales premium</li>
+                </ol>
+              </div>
+            </div>
+            </article>
+          </div>
+
+        <div class="u-Grid">
+          <div class="u-Grid-column">
+            <p>Col 1</p>
+          </div>
+          <div class="u-Grid-column">
+            <p>Col 2</p>
+          </div>
+          <div class="u-Grid-column">
+            <p>Col 3</p>
+          </div>
+          <div class="u-Grid-column">
+            <p>Col 4</p>
+          </div>
+          <div class="u-Grid-column">
+            <p>Col 5</p>
+          </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="HuetorFooter">
+        <div class="HuetorFooter-container u-wrapper">
+            <div class="HuetorFooter-contact">
+                <img class="HuetorFooter-logo" data-src="img/logo-5.svg" alt="logotipo" height="200px" width="280px">
+                <a class="HuetorFooter-link" href="tel:+555777999"><strong>Telefono</strong><span>302447999</span></a>
+                <a class="HuetorFooter-link" href="mailto:contacto@alojamientoshuetor.com"><strong>Email</strong><span>contacto@huetor.com</span></a>
+            </div>
+            <form class="HuetorFooter-form">
+            <div class="HuetorFooter-form-column">
+              <label class="HuetorFooter-form-label" for="nombre">Nombre</label>
+              <input class="HuetorFooter-form-input HuetorFooter-form-input--text" type="text" id="nombre" name="nombre" required placeholder="Introduce tu nombre" />
+              <label class="HuetorFooter-form-label" for="Email">Email</label>
+              <input class="HuetorFooter-form-input HuetorFooter-form-input--text" type="email" id="Email" name="email" required placeholder="Introduce tu email" />
+              <div class="sexo">
+                <label class="HuetorFooter-form-label" for="mujer">
+                  <input class="HuetorFooter-form-input HuetorFooter-form-input--radio" type="radio" id="mujer" name="sexo" value="mujer"> mujer
+                </label>
+                <label class="HuetorFooter-form-label" for="hombre">
+                  <input class="HuetorFooter-form-input HuetorFooter-form-input--radio" type="radio" id="hombre" name="sexo" value="hombre"> hombre
+                </label>
+              </div>
+          <div class="intereses">
+            <label class="HuetorFooter-form-label" for="cotizacion">
+              <input class="HuetorFooter-form-input HuetorFooter-form-input--check" type="checkbox" id="contizacion" name="intereses" value="cotizacion"> Cotización
+            </label>
+            <label class="HuetorFooter-form-label" for="reclamos">
+              <input class="HuetorFooter-form-input HuetorFooter-form-input--check" type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+            </label>
+            <label class="HuetorFooter-form-label" for="comentarios">
+              <input class="HuetorFooter-form-input HuetorFooter-form-input--check" type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+            </label>
+            <label class="HuetorFooter-form-label" for="Otros">
+              <input class="HuetorFooter-form-input HuetorFooter-form-input--check" type="checkbox" id="Otros" name="intereses" value="otros"> Otros
+            </label>
+          </div>
+            </div>
+<div class="HuetorFooter-form-column">
+    <label class="HuetorFooter-form-label" for="comentarios">Asunto</label>
+    <textarea class="HuetorFooter-form-input HuetorFooter-form-input--textarea" name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+    <input class="HuetorFooter-form-btn" type="submit" value="Enviar" class="button">
+    </div>
+        </form>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+        var consulta = window.matchMedia('(max-width:582px)');
+        consulta.addListener(mediaQuery);
+
+        var $burgerButton = document.getElementById("burger-button");
+        var $navbar = document.getElementById("navbar");
+        function toggleMenu(){
+            $navbar.classList.toggle('active');
+            $burgerButton.classList.toggle('icon-close');
+        };
+
+        function showMenu(){
+            $navbar.classList.add('active');
+            $burgerButton.classList.toggle('icon-close');
+        };
+
+        function hideMenu(){
+            $navbar.classList.remove('active');
+            $burgerButton.classList.toggle('icon-close');
+        };
+
+        function mediaQuery(){
+            if(consulta.matches){
+           // si se cumple hagamos esto
+            console.log('se cumplió la condicion');
+            $burgerButton.addEventListener('touchstart', toggleMenu);
+
+
+           } else{
+               $burgerButton.removeEventListener('touchstart', toggleMenu);
+           // si no se cumple hagamos esto
+               console.log('no se cumplió la condicion');
+           }
+        }
+
+        mediaQuery();
+
+        // lazy loading
+        var bLazy = new Blazy({
+            selector: 'img'
+            //options
+        });
+
+
+
+        //$burgerButton.addEventListener('touchstart', toggleMenu);
+
+        // function toggleMenu(){
+        //    $navbar.classList.toggle('active')
+        //};
+
+        //gestos Touch
+        var $body = document.body
+        var gestos = new Hammer($body);
+            gestos.on('swipeleft', hideMenu);
+            gestos.on('swiperight', showMenu);
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,563 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?5jrugc');
+  src:  url('../fonts/icomoon.eot?5jrugc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?5jrugc') format('truetype'),
+    url('../fonts/icomoon.woff?5jrugc') format('woff'),
+    url('../fonts/icomoon.svg?5jrugc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+
+
+
+
+
+/* font-family: 'Montserrat', sans-serif;*/
+/* font-family: 'Allerta', sans-serif;*/
+/*
+*{
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+*/
+body{
+    font-family: 'Allerta', sans-serif;
+    margin: 0;
+}
+input, textarea {
+    outline: 0;
+}
+input:focus, textarea:focus{
+    background: #c1ebc1;
+}
+.background{
+    background-image:url(../img/portada1.jpg);
+    background-size: cover;
+}
+.header{
+    position: relative;
+}
+.titulo{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.title-a{
+    font-size: 24px;
+    margin-top: 0;
+    
+}
+
+.title-b{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.habitaciones{
+    color: #1F313C;
+}
+.habitaciones h2{
+     font-size: 35px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.portada{
+    
+    color:antiquewhite;
+    padding: 20px;
+    height: 650px;
+    
+}
+
+
+.portada button{
+    margin-bottom: 70px;
+}
+.navbar{
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.navbar a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.navbar li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.contenedor{
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.tabla{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.right{
+    float:right;
+    position: relative;
+    right: 50px;
+    top: 20px;
+    
+}
+.left{
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.habitacion{
+    overflow: hidden;
+    border: 1px solid #1F313C;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.habitacion ol{
+    padding: 0;
+}
+.contenedor-habitacion-b{
+    margin-left: 400px;
+    position: relative;
+    bottom: 40px;
+}
+.contenedor-habitacion-a{
+    padding-left: 20px;
+}
+
+.button{
+    border-radius: 12px;
+    border: none;
+    background: #fd324e;
+    color: antiquewhite;
+    background: linear-gradient(to left, #fe344e, #ff7250);
+    height: 40px;
+    font-size: 1.5rem;
+    padding: 7px 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer{
+    background: #a4c6b9;
+    padding: 50px 10px;
+}
+.contacto{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 230px
+    
+}
+
+.contacto img{
+    display: block;
+   
+}
+.contacto strong{
+    display: block;
+}
+.contacto a{
+    color: black;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.formulario{
+    display: flex;
+    width: 400px;
+    
+}
+col-1, .col-2{
+    display: flex;
+    flex-direction: column;
+}
+.col-1{
+    margin-right: 15px;
+}
+.col-2{
+    align-items: flex-start;
+}
+.intereses label{
+    font-size: 11px;
+    
+}
+.formulario label, .sexo, .intereses{
+    margin-bottom: 10px;
+    
+}
+.sexo{
+    margin-top: 10px;
+}
+.formulario input{
+    margin: 5px;
+}
+table{
+    width: 100%;
+}
+th{
+    background: #1F313C;
+    color: aliceblue;
+    
+}
+th{
+    padding: 10px;
+    text-align: left;
+}
+td{
+    padding: 20px;
+}
+table,td,th{
+    border: 1px solid #1F313C;
+    border-collapse: collapse;
+}
+.contactar img{
+    width: 240px;
+    border-radius: 50%;
+}
+.contactar{
+    display: flex;
+    justify-content: center;
+}
+.contactar-datos{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.contactar-datos p:first-of-type{
+    font-size: 25px;
+}
+.contactar-datos p{
+    font-size: 20px;
+    padding:0;
+    margin-bottom: 5px;
+}
+.contactar-datos a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.burger-button{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #0D1B3D;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+    color:antiquewhite;
+}
+.video-responsive-contenedor{
+    position: relative;
+    padding-top: 56.25%;
+}
+.video-demo{
+    max-width: 500px;
+    width: 100%;
+    border: 5px solid ·3c5n6e;
+}
+.video-demo-contenedor{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.video-responsive-src{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* arreglando el formulario */
+@media screen and (max-width: 900px){
+    .footer .contenedor.cont{
+        display: block;
+    }
+    .contacto{
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .contacto img{
+        height: auto;
+        
+    }
+    .col-1{
+        display: inline-grid;
+    }
+    .col-1 label{
+        margin-bottom: 0;
+    }
+    .formulario{
+        display: block;
+        height: auto;
+        margin: 0 auto;
+    }
+    input[type="text"],input[type="email"]{
+        width: 120%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    textarea{
+        width: 80%;
+    }
+    video-demo-contenedor{
+        margin-bottom: 30px;
+    }
+}
+
+/* Media querie para responsive  Tablet*/
+
+@media screen and (max-width: 800px){
+    /* Portada */
+    .titulo{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .title-a{
+        font-size: 18px;
+    }
+    .portada{
+        height: auto;
+    }
+    .portada .button{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    /* Portada */
+    
+    /* Precios */
+    .tabla{
+        margin: 50px 20px;
+    }
+    .tabla .contenedor{
+        overflow: auto;
+        border: 1px solid #273b47;
+    }
+    .contactar{
+        display: block;
+        text-align: center;
+    }
+    
+    /* Habitaciones */
+    .habitaciones{
+        text-align: center;
+    }
+    .left,.right{
+        float: none;
+        position: static;
+    }
+    .contenedor-habitacion-b{
+        position: static;
+        margin: 0;
+    }
+    .habitacion li{
+        list-style: none;
+    }
+    .habitacion img{
+        margin-top: 20px;
+        border-radius: 7px;
+    }
+    .habitacion h3{
+        margin-top: 5px;
+    }
+    .formulario{
+        max-width: none;
+    }
+    .contacto{
+        height: auto;
+        width: auto;
+    }
+    .footer{
+        padding-top: 10px;
+    }
+    .contacto img{
+        height: 120px;
+    }
+    .navbar{
+        font-size: 20px;
+    }
+    /* footer */
+    
+    .contacto{
+        display: block;
+        width: 400px;
+        
+    }
+    .contacto img{
+        
+        margin-bottom: 10px;
+    }
+    .contacto strong{
+        margin-bottom: 4px;
+    }
+}
+
+/* Media querie para moviles */
+
+@media screen and (max-width:700px){
+    .header{
+        text-align: center;
+    }
+    .navbar{
+        position: static;
+        display: block;
+        
+    }
+    .navbar li:first-child{
+        margin: 0;
+    }
+    .navbar ul{
+        padding: 0;
+    }
+    .logo{
+        margin: 0;
+    }
+    .contenedor-habitacion-a{
+        padding: 0;
+    }
+    
+}
+
+/* Media querie para moviles mas pequeño */
+
+@media screen and (max-width:582px){
+    /* portada */
+    .portada .button{
+        display: block;
+    }
+    .formulario .col-2{
+        align-items: stretch;
+    }
+    .precios .header .logo{
+        margin: 50px 0;
+    }
+    .portada .contenedor{
+        position: static;
+    }
+    .header{
+        position: static;
+    }
+    .header .contenedor{
+        position: static;
+    }
+    .burger-button{
+        display: inline-block;
+    }
+    .navbar{
+        background-color: rgba(254, 57, 78, .8);
+        position: fixed;
+        left: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        transition: .3s;
+    }
+    .navbar ul{
+        flex: 1;
+    }
+    .navbar.active{
+        left: 0;
+    }
+    .portada{
+        text-align: center;
+    }
+    .navbar li{
+        display: block;
+        margin: 0;
+        padding: 8px 0;
+        border-bottom: 1px solid white;
+    }
+    .navbar li:first-child{
+        border-top: 1px solid white;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .title-a{
+        font-size: 16px;
+    }
+    /* portada */
+    
+    /* habitaciones */
+    .habitacion img{
+        width: 400px;
+        height: auto;
+    }
+    .title-b{
+        font-size: 35px;
+    }
+    .video-demo-contenedor{
+        margin: 0 10px 30px 10px;
+    }
+    /* habitaciones */
+    
+    /* footer */
+    
+    .intereses label{
+        display: block;
+    }
+    
+    
+    /* footer */
+}

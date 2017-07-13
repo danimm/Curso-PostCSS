@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Precios de tus mejores habitaciones</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Servicio externo es un CDN -->
+    
+</head>
+<body class="precios">
+<header class="header background">
+        <div class="contenedor">
+           <figure class="logo">    <!-- Logotipo -->
+            <img src="img/logo-5.svg" alt="Huetor logo" width="250" height="100">
+        </figure>
+        <span id="burger-button" class="burger-button icon-menu"></span>
+        <nav class="navbar" id="navbar">    <!-- Menú de navegacion -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#habitaciones">Habitaciones</a></li>
+                <li><a href="#precios">Precios</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section class="tabla">
+        <div class="contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Descripcion</th>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Habitación Simple</td>
+                    <td>400€ al dia</td>
+                    <td>Perfecta para una persona</td>
+                    <td>Habitación Simple</td>
+                    <td>400€ al dia</td>
+                    <td>Perfecta para una persona</td>
+                </tr>
+                <tr>
+                    <td>Habitación Doble</td>
+                    <td>800€ al dia</td>
+                    <td>Perfecta para dos personas</td>
+                    <td>Habitación Doble</td>
+                    <td>800€ al dia</td>
+                    <td>Perfecta para dos personas</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+    <div class="contactar">
+        <picture>
+            <img src="img/contacto1.jpg" alt="">
+        </picture>
+        <div class="contactar-datos">
+            <p>Isabel Hijano Pérez</p>
+            <p>CEO Huetor SA</p>
+            <a href="mailto:info@alojmamientoshuetor.com"><strong>Email: </strong><span>info@alojamientoshuetor.com</span></a>
+            <a href="tel:+555777999"><strong>Telefono: </strong><span>+41 302 447 999</span></a>
+            
+            
+        </div>
+    </div>
+<footer class="footer">
+        <div class="contenedor cont">
+            <div class="contacto">
+                <img src="img/logo-5.svg" alt="logotipo" height="200px" width="280px">
+                <a href="tel:+555777999"><strong>Telefono</strong><span>302447999</span></a>
+                <a href="mailto:contacto@alojamientoshuetor.com"><strong>Email</strong><span>contacto@huetor.com</span></a>
+            </div>
+            <form class="formulario">
+            <div class="col-1">
+          <label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" required placeholder="Introduce tu nombre" />
+<label for="Email">Email</label>
+<input type="email" id="Email" name="email" required placeholder="Introduce tu email" />
+<div class="sexo">
+    <label for="mujer">
+                   <input type="radio" id="mujer" name="sexo" value="mujer"> mujer
+               </label>
+    <label for="hombre">
+                   <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
+                   </label>
+</div>
+<div class="intereses">
+    <label for="cotizacion">
+                    <input type="checkbox" id="contizacion" name="intereses" value="cotizacion"> Cotización
+                </label>
+    <label for="reclamos">
+                    <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+                   </label>
+    <label for="comentarios">
+                    <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+                   </label>
+    <label for="Otros">
+                    <input type="checkbox" id="Otros" name="intereses" value="otros"> Otros
+                   </label>
+</div>
+</div>
+<div class="col-2">
+    <label for="comentarios">Asunto</label>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+    <input type="submit" value="Enviar" class="button">
+    </div>
+        </form>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script>
+        var consulta = window.matchMedia('(max-width:582px)');
+        consulta.addListener(mediaQuery);
+        
+        var $burgerButton = document.getElementById("burger-button");
+        var $navbar = document.getElementById("navbar");
+        function toggleMenu(){
+            $navbar.classList.toggle('active');
+            $burgerButton.classList.toggle('icon-close');
+        };
+        
+        function mediaQuery(){
+            if(consulta.matches){
+           // si se cumple hagamos esto
+            console.log('se cumplió la condicion');
+            $burgerButton.addEventListener('touchstart', toggleMenu);
+                                                
+            
+           } else{
+               $burgerButton.removeEventListener('touchstart', toggleMenu);
+           // si no se cumple hagamos esto
+               console.log('no se cumplió la condicion');
+           }
+        }
+        
+        mediaQuery();
+        
+        // lazy loading
+        var bLazy = new Blazy({
+            selector: 'img'
+            //options
+        });
+        
+        
+        
+        //$burgerButton.addEventListener('touchstart', toggleMenu);
+                                                
+        // function toggleMenu(){
+        //    $navbar.classList.toggle('active')
+        //};
+    
+    </script>
+</body>
+</html>
